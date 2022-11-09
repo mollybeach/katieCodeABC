@@ -48,8 +48,9 @@ git clone https://github.com/mollybeach/katieCodeABC
     </td>
     </tr>
 </table>
-   
-
 ### 3. [Usage](#usage)
+    To run this project you will need to open the project in vs code and run the code with the code runner extension
 ### 4. [Contributing](#contributing)
+    This project is open to contributions
 ### 5. [License](#license)
+    This project is licensed under the MIT license
