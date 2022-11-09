@@ -37,11 +37,11 @@
         <h5>In order to run this project you will need run the following commands in your terminal: </h5>
 <pre class="notranslate">
 <code>
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/installsh)"
-    brew install git
-    brew install --cask visual-studio-code
-    code --install-extension formulahendry.code-runner
-    git clone https://github.com/mollybeach/katieCodeABC 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/installsh)"
+brew install git
+brew install --cask visual-studio-code
+code --install-extension formulahendry.code-runner
+git clone https://github.com/mollybeach/katieCodeABC 
 </code>
 </pre>
     </td>
