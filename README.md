@@ -30,15 +30,17 @@
         <h4>https://code.visualstudio.com/download</h4>
         <h4>https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner</h4>
     </td>
-
-<td>
-    <h3>Install With Command Line</h3>
-    <h4>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</h4>
-    <h4>brew install git</h4>
-    <h4>brew install --cask visual-studio-code</h4>
-    <h4>code --install-extension formulahendry.code-runner</h4>
-    <h4>git clone https://github.com/mollybeach/katieCodeABC </h4>
-</td>
+    </tr>
+    <tr>
+    <td>
+        <h3>Install With Command Line</h3>
+        <h4>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/installsh)"</h4>
+        <h4>brew install git</h4>
+        <h4>brew install --cask visual-studio-code</h4>
+        <h4>code --install-extension formulahendry.code-runner</h4>
+        <h4>git clone https://github.com/mollybeach/katieCodeABC </h4>
+    </td>
+    </tr>
 </table>
    
 
