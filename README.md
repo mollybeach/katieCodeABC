@@ -28,7 +28,7 @@
     https://git-scm.com/downloads
     https://code.visualstudio.com/download
     https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
-    git clone https://github.com/mollybeach/katieCodeABC
+    https://github.com/mollybeach/katieCodeABC
     </td>
     </tr>
     <tr>
