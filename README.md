@@ -18,43 +18,18 @@
     * vs code
     * vs code code runner extension
     * clone this repo to your local machine
-
-
-    <table>
-    <tr>
-    <td>
-    <th> Install With Links </th>
-    https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-    https://git-scm.com/downloads
-    https://code.visualstudio.com/download
-    https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
-    https://github.com/mollybeach/katieCodeABC
-    </td>
-    </tr>
-    <tr>
-    <th>Install With Command Line</th>
-    <td>
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    brew install git
-    brew install --cask visual-studio-code
-    code --install-extension formulahendry.code-runner
-    git clone https://github.com/mollybeach/katieCodeABC
-    </td>
-    </tr>
-    </table>
-
-    
+### 3. [Usage](#usage)
 
   <table>
-<th><h2>Installation</h3></th>
-<tr>
-<td>
-    <h3> Install With Links </h3>
-    <h4>https://docs.npmjs.com/downloading-and-installing-node-js-and-npm</h4> 
-    <h4>https://git-scm.com/downloads</h4>
-    <h4>https://code.visualstudio.com/download</h4>
-    <h4>https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner</h4>
-</td>
+    <th><h2>Installation</h3></th>
+    <tr>
+    <td>
+        <h3> Install With Links </h3>
+        <h4>https://docs.npmjs.com/downloading-and-installing-node-js-and-npm</h4> 
+        <h4>https://git-scm.com/downloads</h4>
+        <h4>https://code.visualstudio.com/download</h4>
+        <h4>https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner</h4>
+    </td>
 
 <td>
     <h3>Install With Command Line</h3>
@@ -64,7 +39,6 @@
     <h4>code --install-extension formulahendry.code-runner</h4>
     <h4>git clone https://github.com/mollybeach/katieCodeABC </h4>
 </td>
-
 </table>
    
 
