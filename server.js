@@ -65,7 +65,7 @@ const server = http.createServer((req, res) => {
     fileStream.pipe(res);
   } else if(stats.isDirectory()) {
     res.statusCode = 302;
-    res.setHeader('Location', 'index.html');
+    res.setHeader('Location', './Automator/index.html');
     res.end();
   } else {
     res.statusCode = 500;
