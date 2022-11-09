@@ -18,8 +18,6 @@
     * vs code
     * vs code code runner extension
     * clone this repo to your local machine
-### 3. [Usage](#usage)
-
   <table>
     <th><h2>Installation</h3></th>
     <tr>
@@ -48,6 +46,7 @@ git clone https://github.com/mollybeach/katieCodeABC
     </td>
     </tr>
 </table>
+
 ### 3. [Usage](#usage)
     To run this project you will need to open the project in vs code and run the code with the code runner extension
 ### 4. [Contributing](#contributing)
