@@ -35,14 +35,15 @@
     <td>
         <h3>Install With Command Line</h3>
         <pre class="notranslate">
-            <code>
-            In order to run this project you will need to install the following:
-                /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/installsh)"
-                brew install git
-                brew install --cask visual-studio-code
-                code --install-extension formulahendry.code-runner
-                git clone https://github.com/mollybeach/katieCodeABC 
-            </code>
+        <code>
+        In order to run this project you will need run the following commands in your terminal:
+        
+            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/installsh)"
+            brew install git
+            brew install --cask visual-studio-code
+            code --install-extension formulahendry.code-runner
+            git clone https://github.com/mollybeach/katieCodeABC 
+        </code>
         </pre>
     </td>
     </tr>
