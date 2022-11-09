@@ -34,11 +34,11 @@
     <tr>
     <td>
         <h3>Install With Command Line</h3>
-        <h4>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/installsh)"</h4>
-        <h4>brew install git</h4>
-        <h4>brew install --cask visual-studio-code</h4>
-        <h4>code --install-extension formulahendry.code-runner</h4>
-        <h4>git clone https://github.com/mollybeach/katieCodeABC </h4>
+        * /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/installsh)"
+        * brew install git
+        * brew install --cask visual-studio-code
+        * code --install-extension formulahendry.code-runner
+        * git clone https://github.com/mollybeach/katieCodeABC 
     </td>
     </tr>
 </table>
