@@ -27,7 +27,9 @@
     https://git-scm.com/downloads
     https://code.visualstudio.com/download
     https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
+    git clone https://github.com/mollybeach/katieCodeABC
     </tr>
+    <tr>
     <th>Install With Command Line</th>
     <td>
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
