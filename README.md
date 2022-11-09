@@ -41,6 +41,7 @@
 brew install git
 brew install --cask visual-studio-code
 code --install-extension formulahendry.code-runner
+cd Documents
 git clone https://github.com/mollybeach/katieCodeABC 
 </code>
 </pre>
