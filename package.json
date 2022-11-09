@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Script to filter out Links And Titles from Courses List",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mollybeach/katieCodeABC/issues"
   },
-  "homepage": "https://github.com/mollybeach/katieCodeABC#readme"
+  "homepage": "https://github.com/mollybeach/katieCodeABC#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
 }
