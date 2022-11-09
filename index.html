@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
-<body>
-    <h1>My Courses</h1>
-    <ul id="courseList">
-        <script type="module" src="./coursesScript.js">displayCourses();</script>
-    </ul>
-</body>
+    <body>
+        <h1>My Courses</h1>
+        <ul id="courseList">
+            <script type="module" >
+                import { displayCourses } from './getCourses.js';
+                displayCourses();
+            </script>
+        </ul>
+    </body>
 </html>
 
 

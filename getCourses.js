@@ -4513,7 +4513,7 @@ let courses = [{
 	"link": "https://accenture.percipio.comhttps://percipioapp.page.link/wtQ4"
 }];
 
-function displayCourses() {
+export function displayCourses() {
 let courseList = document.getElementById("courseList");
 for (let i = 0; i < courses.length; i++) {
 let course = courses[i];
@@ -4526,6 +4526,5 @@ courseList.appendChild(document.createElement("br"));
 }
 }
 
-export { displayCourses };
 
 
