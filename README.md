@@ -22,12 +22,14 @@
 
     <table>
     <tr>
+    <td>
     <th> Install With Links </th>
     https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
     https://git-scm.com/downloads
     https://code.visualstudio.com/download
     https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
     git clone https://github.com/mollybeach/katieCodeABC
+    </td>
     </tr>
     <tr>
     <th>Install With Command Line</th>
@@ -40,6 +42,8 @@
     </td>
     </tr>
     </table>
+
+    
 
   <table>
 <th><h2>Installation</h3></th>
