@@ -39,6 +39,15 @@
         * brew install --cask visual-studio-code
         * code --install-extension formulahendry.code-runner
         * git clone https://github.com/mollybeach/katieCodeABC 
+        <pre class="notranslate"><code>In order to run this project you will need to install the following:
+
+
+* npm
+* git
+* vs code
+* vs code code runner extension
+* clone this repo to your local machine
+</code></pre>
     </td>
     </tr>
 </table>
