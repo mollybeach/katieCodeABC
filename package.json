@@ -1,0 +1,19 @@
+{
+  "name": "katiecodeabc",
+  "version": "1.0.0",
+  "description": "Script to filter out Links And Titles  from Courses List",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mollybeach/katieCodeABC.git"
+  },
+  "author": "Molly Beach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mollybeach/katieCodeABC/issues"
+  },
+  "homepage": "https://github.com/mollybeach/katieCodeABC#readme"
+}
