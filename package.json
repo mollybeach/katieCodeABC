@@ -1,7 +1,7 @@
 {
   "name": "katiecodeabc",
   "version": "1.0.0",
-  "description": "Script to filter out Links And Titles from Courses List",
+  "description": "Script to filter out Links And Titles from Links List",
   "main": "server.js",
   "type": "module",
   "scripts": {
