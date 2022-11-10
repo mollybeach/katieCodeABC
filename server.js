@@ -1,6 +1,7 @@
 // Required Modules
 import { createRequire } from "module"
 const require = createRequire(import.meta.url);
+import config from './config.json' assert { type: "json" }
 
 const fs = require('fs');
 const http = require('http');
