@@ -1,4 +1,4 @@
-import linkData from './dataLinks.json' assert {type: 'json'};
+import linkData from './linkData.json' assert {type: 'json'};
 
 async function getLinks() {
   return new Promise((resolve, reject) => {
