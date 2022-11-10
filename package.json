@@ -21,6 +21,7 @@
   "dependencies": {
     "fs": "^0.0.1-security",
     "http-server": "^14.1.1",
-    "node": "^19.0.1"
+    "node": "^19.0.1",
+    "node-fetch": "^3.3.0"
   }
 }

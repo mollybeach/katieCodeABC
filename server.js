@@ -73,7 +73,7 @@ const server = http.createServer((req, res) => {
   } else if(stats.isDirectory()) {
     res.statusCode = 302;
     // send fs to getLinksSite.js
-    getLinks(fs);;
+    getLinks(fs);
     res.setHeader('Location', './Automator/index.html');
     res.end();
   } else {
