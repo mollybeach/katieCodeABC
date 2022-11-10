@@ -1,6 +1,6 @@
 // matches only the attributes aria-label and href in the anchor tag and saves them in an object as title and link
 export function getLinks(fs) {
-    const html = fs.readFileSync('./Automator/sourceSiteCode.txt', 'utf8');
+    const html = fs.readFileSync('./Automator/sourceCode.txt', 'utf8');
     const regex = /<a.*?aria-label="(.*?)".*?href="(.*?)".*?>(.*?)<\/a>/g//g;
     const linkAndTitleDatabase = []
     let match = regex.exec(html)
