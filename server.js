@@ -2,14 +2,11 @@
 import { createRequire } from "module"
 const require = createRequire(import.meta.url);
 import config from './config.json' assert { type: "json" }
-
 const fs = require('fs');
 const http = require('http');
 const url = require('url');
 const path = require('path');
-
-
-
+import { getLinks } from './getLinksSite.js';
 
 // Array of Mime Types
 const mimeTypes = {
@@ -70,13 +67,13 @@ const server = http.createServer((req, res) => {
   if(stats.isFile()) {
     var mimeType = mimeTypes[path.extname(fileName).split('.').reverse()[0]];
     res.statusCode = 200;
-    //TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Content-Type"
-    // fix the above error by adding a default value to the mimeType variable
     res.setHeader('Content-Type', mimeType || 'text/plain');
     var fileStream = fs.createReadStream(fileName);
     fileStream.pipe(res);
   } else if(stats.isDirectory()) {
     res.statusCode = 302;
+    // send fs to getLinksSite.js
+    getLinks(fs);;
     res.setHeader('Location', './index.html');
     res.end();
   } else {
@@ -90,31 +87,6 @@ const server = http.createServer((req, res) => {
 // Run Server
 server.listen(port, hostname, () => {
   console.log('Server running at http://' + hostname + ':' + port + '\n');
-  const html = fs.readFileSync('./sourceSiteCode.txt', 'utf8');
-  console.log('peoreporepor')
-  // matches only the attributes aria-label and href in the anchor tag and saves them in an object as title and link
-  const getLinks = (html) => {
-      const regex = /<a.*?aria-label="(.*?)".*?href="(.*?)".*?>(.*?)<\/a>/g//g;
-      const linkAndTitleDatabase = []
-      let match = regex.exec(html)
-      while (match != null) {
-          let currentMatch = {
-              title: match[1],
-              link: match[2],
-          }
-          linkAndTitleDatabase.push(currentMatch);
-          match = regex.exec(html)
-      }
-      // adds missing beginning part of link to each link
-      for (let i = 0; i < linkAndTitleDatabase.length; i++) {
-          linkAndTitleDatabase[i].link = 'https://accenture.percipio.com' + linkAndTitleDatabase[i].link
-      }
-      //write result to file linkData.json:
-      fs.writeFile('./linkData.json', JSON.stringify(linkAndTitleDatabase), (err) => {
-          if (err) throw err;
-          console.log('The html source code txt file has converted into a json file and been saved in linkData.json!');
-      });
-  }
-  
-  getLinks(html);
+ 
 });
+
