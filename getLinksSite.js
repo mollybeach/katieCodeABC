@@ -14,22 +14,18 @@ const getLinks = (html) => {
         linkAndTitleDatabase.push(currentMatch);
         match = regex.exec(html)
     }
-    return linkAndTitleDatabase
+    // adds missing beginning part of link to each link
+    for (let i = 0; i < linkAndTitleDatabase.length; i++) {
+        linkAndTitleDatabase[i].link = 'https://accenture.percipio.com' + linkAndTitleDatabase[i].link
+    }
+    //write result to file linkData.json:
+    fs.writeFile('./linkData.json', JSON.stringify(linkAndTitleDatabase), (err) => {
+        if (err) throw err;
+        console.log('The html source code txt file has converted into a json file and been saved in linkData.json!');
+    });
 }
 
-let onlyLinks = getLinks(html);
-
-// adds missing beginning part of link to each link
-for (let i = 0; i < onlyLinks.length; i++) {
-    onlyLinks[i].link = 'https://accenture.percipio.com' + onlyLinks[i].link;
-}
-
-//write result to file linkData.json:
-fs.writeFile('./linkData.json', JSON.stringify(onlyLinks), (err) => {
-    if (err) throw err;
-    console.log('The html source code txt file has converted into a json file and been saved in linkData.json!');
-});
-
+getLinks(html);
 
 
 
