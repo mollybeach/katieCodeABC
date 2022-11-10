@@ -17,10 +17,10 @@ export function displayLinks() {
     let listTag = document.getElementById("listTag");
     for (let i = 0; i < linkData.length; i++) {
         console.log(linkData[i]);
-        let Link = linkData[i];
+        let element = linkData[i];
         let tagLink = document.createElement("a");
-        tagLink.setAttribute("href", Link.link);
-        tagLink.innerHTML = Link.title;
+        tagLink.setAttribute("href", element.link);
+        tagLink.innerHTML = element.title;
         listTag.appendChild(tagLink);
         // add a line break
         listTag.appendChild(document.createElement("br"));
