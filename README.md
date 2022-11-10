@@ -57,3 +57,13 @@ git clone https://github.com/mollybeach/katieCodeABC
 
 
 
+/* 
+take an a html written as a string use regex and remove tag besides <a> tags
+i want to save the link and the title of the link in the database 
+remove all tags except <a> tags for example <p> tags
+example:
+`<a href="http://www.google.com">Google</a> <a href="http://www.yahoo.com">Yahoo</a>`);
+returns:
+Google http://www.google.com
+Yahoo http://www.yahoo.com"
+*/
