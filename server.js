@@ -72,7 +72,6 @@ const server = http.createServer((req, res) => {
     //TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Content-Type"
     // fix the above error by adding a default value to the mimeType variable
     res.setHeader('Content-Type', mimeType || 'text/plain');
-
     var fileStream = fs.createReadStream(fileName);
     fileStream.pipe(res);
   } else if(stats.isDirectory()) {
