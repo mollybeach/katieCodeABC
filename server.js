@@ -6,7 +6,7 @@ const fs = require('fs');
 const http = require('http');
 const url = require('url');
 const path = require('path');
-import { getLinks } from './getLinksSite.js';
+import { getLinks } from './Automator/getLinksSite.js';
 
 // Array of Mime Types
 const mimeTypes = {
@@ -74,7 +74,7 @@ const server = http.createServer((req, res) => {
     res.statusCode = 302;
     // send fs to getLinksSite.js
     getLinks(fs);;
-    res.setHeader('Location', './index.html');
+    res.setHeader('Location', './Automator/index.html');
     res.end();
   } else {
     res.statusCode = 500;

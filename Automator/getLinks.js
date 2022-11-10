@@ -9,7 +9,6 @@ async function getLinks() {
   });
 }
 
-
 await getLinks();
 
 export function displayLinks() {
@@ -25,7 +24,7 @@ export function displayLinks() {
         // add a line break
         listTag.appendChild(document.createElement("br"));
     }
-    }
+}
 
 
 
