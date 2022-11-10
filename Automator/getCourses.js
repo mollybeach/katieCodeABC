@@ -1,7 +1,8 @@
  
 //import * as courses from './Link.json' assert { type: 'json' };
 // set the variable courses to the content of the json file
-
+import { createRequire } from "module"
+const require = createRequire(import.meta.url);
 let courses = [{
 	"title": "AI Framework Overview: AI Developer Role",
 	"link": "https://accenture.percipio.com/courses/cfaeeedf-ca90-4eec-a71d-3fbd952b9fe4"
@@ -4512,7 +4513,8 @@ let courses = [{
 	"title": "Download on the App Store",
 	"link": "https://accenture.percipio.comhttps://percipioapp.page.link/wtQ4"
 }];
-
+// import the courses from Link.json file instead of hardcoding them
+courses = require('./Link.json');
 export function displayCourses() {
 let courseList = document.getElementById("courseList");
 for (let i = 0; i < courses.length; i++) {

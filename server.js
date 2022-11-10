@@ -1,11 +1,14 @@
 // Required Modules
 import { createRequire } from "module"
 const require = createRequire(import.meta.url);
+import config from './config.json' assert { type: "json" };
 
 const fs = require('fs');
 const http = require('http');
 const url = require('url');
 const path = require('path');
+
+
 
 // Array of Mime Types
 const mimeTypes = {
@@ -13,6 +16,8 @@ const mimeTypes = {
   "html" : "text/html",
   "css" : "text/css",
   "js" : "text/javascript",
+  "txt" : "text/plain",
+
   // Image Types
   "jpeg" : "image/jpeg",
   "jpg" : "image/jpeg",
@@ -32,12 +37,14 @@ const mimeTypes = {
   "woff" : "font/woff",
   "woff2" : "font/woff2",
   // Application Types
-  "pdf" : "application/pdf"
+  "pdf" : "application/pdf",
+  "json" : "application/json"
 };
 
 // Hostname and Port
 const hostname = '127.0.0.1';
 const port = 3000;
+
 
 // Create Server
 const server = http.createServer((req, res) => {
@@ -51,6 +58,8 @@ const server = http.createServer((req, res) => {
   } catch(e) {
     // If file not found
     res.writeHead(404, {'Content-Type' : 'text/plain'});
+    res.write(`App name: ${config.name}\n`);
+    res.write(`App version: ${config.version}`);
     res.write('404 not Found\n');
     res.end();
     return;
@@ -60,12 +69,15 @@ const server = http.createServer((req, res) => {
   if(stats.isFile()) {
     var mimeType = mimeTypes[path.extname(fileName).split('.').reverse()[0]];
     res.statusCode = 200;
-    res.setHeader('Content-Type', mimeType);
+    //TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Content-Type"
+    // fix the above error by adding a default value to the mimeType variable
+    res.setHeader('Content-Type', mimeType || 'text/plain');
+
     var fileStream = fs.createReadStream(fileName);
     fileStream.pipe(res);
   } else if(stats.isDirectory()) {
     res.statusCode = 302;
-    res.setHeader('Location', './Automator/index.html');
+    res.setHeader('Location', './index.html');
     res.end();
   } else {
     res.statusCode = 500;
