@@ -1,6 +1,18 @@
-import fs from 'fs';
-const html = fs.readFileSync('./sourceSiteCode.txt', 'utf8');
 
+//import fs from 'fs';
+/*uncaught TypeError: Failed to resolve module specifier "fs". Relative references must start with either "/", "./", or "../".*/
+// try to fix yjr fs import:
+// fix the error about require not being defined:
+// 
+/*
+const fs = require('fs');
+//error: getLinksSite.js:5 Uncaught ReferenceError: require is not defined
+
+
+
+
+const html = fs.readFileSync('./sourceSiteCode.txt', 'utf8');
+console.log('peoreporepor')
 // matches only the attributes aria-label and href in the anchor tag and saves them in an object as title and link
 const getLinks = (html) => {
     const regex = /<a.*?aria-label="(.*?)".*?href="(.*?)".*?>(.*?)<\/a>/g//g;
@@ -28,4 +40,4 @@ const getLinks = (html) => {
 getLinks(html);
 
 
-
+*/
